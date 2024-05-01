@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/score.css">
+    <title>Game da Cidadania</title>
+</head>
+<body>
+    <h1>Pontuação</h1>
+    <p id="score-text">Carregando sua pontuação...</p>
+    <script>
+        const score = localStorage.getItem('quizScore');
+        document.getElementById('score-text').innerText = `${score}`;
+    </script>
+    <footer>
+        <div class="copy">
+            <br>
+            <br>
+            <p> &copy; 2024 LABIC</p>
+        </div>
+    </footer>
+</body>
+</html>

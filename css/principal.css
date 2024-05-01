@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: FonteP;
+    src: url(Riangriung-Demo.otf);
+}
+
+body {
+    background-color: #1ABDD7;
+}
+
+#container,
+.logo,
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: -130px;
+}
+
+#container {
+    margin-top: -140px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#true-btn, 
+#false-btn {
+    background-color: #FDD183;
+    border: 2px solid #452B6C;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+
+#true-btn, 
+#false-btn, 
+a {
+    text-decoration: none;
+    color: #452B6C;
+    font-weight: bold;
+    font-family: FonteP;
+    font-size: 20px;
+}
+
+.copy {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1ABDD7;
+}
+
+footer {
+    background-color: #FFFFFF;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-top: -50px;
+    }
+
+    #container {
+        margin-top: -70px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    #true-btn,
+    #false-btn {
+        font-size: 16px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
